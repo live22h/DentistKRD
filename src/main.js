@@ -2,9 +2,9 @@ import React from 'react'
 import {
     Route,
     NavLink,
-    HashRouter
+    HashRouter,
+    Switch
 } from 'react-router-dom'
-
 import Home from './components/home'
 import Services from './components/services'
 import Order from './components/order'
@@ -23,10 +23,12 @@ export default class Main extends React.Component {
                         <li><NavLink to="/order">Записаться на прием</NavLink></li>
                     </ul>
                     <div className="content">
-                        <Route exact path="/" component={Home}/>
-                        <Route path="/services" component={Services} />
-                        <Route path="/contacts" component={Contacts} />
-                        <Route path="/order" component={Order} />
+                            <Switch>
+                                <Route exact path="/" component={Home} />
+                                <Route path="/services" component={Services} />
+                                <Route path="/contacts" component={Contacts} />
+                                <Route path="/order" component={Order} />
+                            </Switch>
                     </div>
                 </div>
             </HashRouter>
