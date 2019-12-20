@@ -1,27 +1,21 @@
 import React from 'react'
 import {
     Route,
-    NavLink,
     HashRouter,
     Switch
 } from 'react-router-dom'
-import Home from './components/home'
-import Services from './components/services'
-import Order from './components/order'
-import Contacts from './components/contacts'
+import Home from './pages/home'
+import Services from './pages/services'
+import Order from './pages/order'
+import Contacts from './pages/contacts'
+import Menu from './components/menu'
 
 export default class Main extends React.Component {
     render() {
         return (
             <HashRouter>
                 <div className="main">
-                    <h1>Севастьянов Александр Владимирович</h1>
-                    <ul className="menu">
-                        <li><NavLink to="/">Главная</NavLink></li>
-                        <li><NavLink to="/services">Услуги</NavLink></li>
-                        <li><NavLink to="/contacts">Контакты</NavLink></li>
-                        <li><NavLink to="/order">Записаться на прием</NavLink></li>
-                    </ul>
+                    <Menu/>
                     <div className="content">
                             <Switch>
                                 <Route exact path="/" component={Home} />

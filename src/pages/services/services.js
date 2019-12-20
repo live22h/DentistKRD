@@ -9,7 +9,7 @@ export default class Services extends React.Component {
                 transitionAppear={true}
                 transitionLeaveTimeout={500}
                 transitionEnterTimeout={500}
-                className="home"
+                className="services"
                 transitionName="page-animation">
                 <div className="services page">
                     <h2>Services</h2>

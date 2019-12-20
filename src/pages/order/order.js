@@ -8,7 +8,7 @@ export default class Order extends React.Component {
             transitionAppear={true}
             transitionLeaveTimeout={500}
             transitionEnterTimeout={500}
-            className="home"
+            className="order"
             transitionName="page-animation">
            <div className="order page">
                 <h2>Order</h2>

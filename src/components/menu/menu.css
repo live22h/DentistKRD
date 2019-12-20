@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    animation: showIn 1s 1;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.menu > li {
+    display: block;
+    text-transform: uppercase;
+    margin: 1em;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.menu li > a {
+    text-decoration: none;
+    color: #ccc;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s color;
+}
+
+.menu li > a:hover {
+   color: rgb(255, 166, 0);
+}

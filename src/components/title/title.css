@@ -1,0 +1,29 @@
+.title {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.title>h1 {
+    padding: 3em 0 0 0;
+    font-size: 1em;
+    margin: 0;
+    animation: showIn .7s ease-in 1;
+}
+
+.title>h2 {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0;
+    margin: 0;
+    animation: showIn .7s ease-in 1;
+}
+
+.title>hr {
+    width: 10em;
+    height: 0.2em;
+    background-color: #ccc;
+    animation: hr 0.7s ease-in 1;
+    animation-fill-mode: backwards;
+}

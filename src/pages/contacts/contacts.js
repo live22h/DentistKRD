@@ -8,7 +8,7 @@ export default class Contacts extends React.Component {
             transitionAppear={true}
             transitionLeaveTimeout={500}
             transitionEnterTimeout={500}
-            className="home"
+            className="contacts"
             transitionName="page-animation">
             <div className="contacts page">
                 <h2>Contacts</h2>

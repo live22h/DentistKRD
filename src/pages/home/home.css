@@ -1,0 +1,16 @@
+.home {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    color: #bbb;
+}
+
+.person {
+    position: absolute;
+    left: 1vw;
+    bottom: 0;
+    height: 80vh;
+    width: auto;
+}
