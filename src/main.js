@@ -5,18 +5,18 @@ import {
     HashRouter
 } from 'react-router-dom'
 
-import Home from './home'
-import Services from './services'
-import Order from './order'
-import Contacts from './contacts'
+import Home from './components/home'
+import Services from './components/services'
+import Order from './components/order'
+import Contacts from './components/contacts'
 
 export default class Main extends React.Component {
     render() {
         return (
             <HashRouter>
-                <div>
+                <div className="main">
                     <h1>Севастьянов Александр Владимирович</h1>
-                    <ul className="header">
+                    <ul className="menu">
                         <li><NavLink to="/">Главная</NavLink></li>
                         <li><NavLink to="/services">Услуги</NavLink></li>
                         <li><NavLink to="/contacts">Контакты</NavLink></li>
