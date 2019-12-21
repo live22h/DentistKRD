@@ -7,17 +7,14 @@ export default class Home extends React.Component {
     render() {
         return (
             <ReactCSSTransitionGroup
-            transitionAppear={true}
-            transitionLeaveTimeout={500}
-            transitionEnterTimeout={500}
-            className="home"
-            transitionName="page-animation">
-
-            <div className="page" >
-                <img src="av.png" className="person"/>
-                <Title name="Александр Севастьянов" description="Семейный стоматолог" />
-            </div>
-        </ReactCSSTransitionGroup>
+                transitionAppear={true}
+                transitionLeaveTimeout={500}
+                transitionEnterTimeout={500}
+                className="home page"
+                transitionName="page-animation">
+                <img src="av.png" className="person" />
+                <Title name="Александр Севастьянов" description="Ваш семейный стоматолог" />
+            </ReactCSSTransitionGroup>
         )
     }
 }

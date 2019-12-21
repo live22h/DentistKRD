@@ -14,16 +14,14 @@ export default class Main extends React.Component {
     render() {
         return (
             <HashRouter>
-                <div className="main">
-                    <Menu/>
-                    <div className="content">
-                            <Switch>
-                                <Route exact path="/" component={Home} />
-                                <Route path="/services" component={Services} />
-                                <Route path="/contacts" component={Contacts} />
-                                <Route path="/order" component={Order} />
-                            </Switch>
-                    </div>
+                <div className="content">
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/services" component={Services} />
+                        <Route path="/contacts" component={Contacts} />
+                        <Route path="/order" component={Order} />
+                    </Switch>
+                    <Menu />
                 </div>
             </HashRouter>
         )
