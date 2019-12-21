@@ -2,7 +2,7 @@ import React from 'react'
 import ReactCSSTransitionGroup from "react-addons-css-transition-group"
 import { faHome, faPhoneAlt, faAt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import PageHeader from '../../components/pege-header'
 export default class Contacts extends React.Component {
     render() {
         return (
@@ -13,13 +13,8 @@ export default class Contacts extends React.Component {
                 className="contacts"
                 transitionName="page-animation">
                 <div className="contacts page">
+<PageHeader title="Контакты"/>
                     <div className="container">
-                        <div className="row">
-                            <div className="col-sm-12">
-                                <h2>Контакты</h2>
-                            </div>
-                        </div>
-
                         <div className="row">
                             <div className="col-sm-12">
                                 <FontAwesomeIcon icon={faHome} /> г. Краснодар, ул. Рашпилевская, 189/2

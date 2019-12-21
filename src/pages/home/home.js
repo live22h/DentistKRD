@@ -13,7 +13,9 @@ export default class Home extends React.Component {
                 className="home page"
                 transitionName="page-animation">
                 <img src="av.png" className="person" />
-                <Title name="Александр Севастьянов" description="Ваш семейный стоматолог" />
+                <Title name="Александр Владимирович" family="Севастьянов" description="Ваш семейный стоматолог" />
+
+              
             </ReactCSSTransitionGroup>
         )
     }
