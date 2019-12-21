@@ -1,0 +1,91 @@
+.title {
+    position: absolute;
+    top:12vh;
+    left: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    font-family: 'Montserrat', sans-serif;
+    float: right;
+    font-weight: 100;
+    margin: 0;
+    text-align: right;
+}
+
+.title>.doctor-name {
+    font-size: 2.5em;
+    animation: showIn .7s ease-in 1;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.title>.doctor-lastname {
+    font-size: 4.5em;
+    font-weight: 500;
+    animation: showIn .7s ease-in 1;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+.title>hr {
+    width: 40%;
+    height: 0.1em;
+    float: right;
+    align-self: flex-end;
+    background-color: #ccc;
+    animation: hr 0.7s ease-in 1;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+}
+
+.title>.doctor-description {
+    font-size: 1.5em; 
+    text-transform: uppercase;
+    animation: showFromRight .7s ease-in 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+}
+
+.title>.skills {
+    margin-left: 10em;
+    margin-top: 4em;
+    font-size: 24;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    float: left;
+    text-align: left;
+}
+
+.title>.skills>.years{
+    font-size: 1.6em; 
+    animation: showFromBottom .7s ease-in 1;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+.title>.skills>.operations{
+    font-size: 1.6em; 
+    animation: showFromBottom .7s ease-in 1;
+    animation-delay: 2.2s;
+    animation-fill-mode: backwards;
+}
+
+.title>.skills>.clients{
+    font-size: 1.6em; 
+    animation: showFromBottom .7s ease-in 1;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+}
+
+.action-button {
+    margin-top: 3em;
+}
+
+.main-phone {
+    position: relative;
+    color: #ccc;
+    font-size: 1.5em;
+    margin-top: 15em;
+}
+

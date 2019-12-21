@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,400,800,900&display=swap&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(200, 80%, 30%);
+    background-image: radial-gradient(hsl(200, 80%, 30%), hsl(210, 80%, 20%));
+    color: white;
+    font-family: Raleway, Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    min-height: 100vh;
+}
+
+a:link {
+    color: #aaa
+   }
+   a:visited {
+    color: #aaa
+   }
+   a:active {
+    color: #aaa
+   } 
+   
+.page {
+    margin-left: 5em;
+}
+main {
+    display: block;
+  }
+
+h2{
+    color: #ccc;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.container {
+    height: 100vh;
+}
+.homeTransition-appear {
+    opacity: 0;
+}
+
+.homeTransition-appear.homeTransition-appear-active {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.page-animation-enter {
+    opacity: 0.01;
+}
+
+.page-animation-enter.page-animation-enter-active {
+    opacity: 1;
+    transition: opacity 1ms ease-in;
+}
+
+.page-animation-leave {
+    opacity: 1;
+}
+
+.page-animation-leave.page-animation-leave-active {
+    opacity: 0.01;
+    transition: opacity 1ms ease-in;
+}
+
+.page-animation-appear {
+    opacity: 0.01;
+}
+
+.page-animation-appear.page-animation-appear-active {
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+@keyframes showIn {
+  0% {
+      opacity: 0;
+      transform: translateX(-0.5em);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes showFromRight {
+  0% {
+      opacity: 0;
+      transform: translateX(+0.5em);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes showFromBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(+0.5em);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes hr {
+    0% {
+        width: 0em;
+        opacity: 0;
+    }
+    100% {
+        width: 10em;
+        opacity: 1;
+    }
+}
+
+@keyframes fly-in {
+  0% {
+      transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+  }
+  56% {
+      transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+  }
+  100% {
+      transform: translateZ(0) rotateY(0);
+  }
+}
+
+@keyframes buzz {
+    0% {
+        left: 0;
+        bottom: 0;
+    }
+    25% {
+        left: -10px;
+        bottom: 0;
+    }
+    50% {
+        left: 10px;
+        bottom: 15px;
+    }
+    75% {
+        left: 0px;
+        bottom: 0;
+    }
+    80% {
+        left: 15px;
+        bottom: 10px;
+    }
+    100% {
+        left: 0px;
+        bottom: 0;
+    }
+}
+
+main {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .flyin-grid {
+    margin: 0 1rem;
+    perspective: 500px;
+  }
+
+  .flyin-grid__item {
+    animation: fly-in 600ms ease-in;
+    animation-fill-mode: backwards;
+  }
+
+  .flyin-grid__item:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+  .flyin-grid__item:nth-child(3) {
+    animation-delay: 0.25s;
+  }
+  .flyin-grid__item:nth-child(4) {
+    animation-delay: 0.35s;
+  }
+  .flyin-grid__item:nth-child(5) {
+    animation-delay: 0.45s;
+  }
+
+  @media (min-width: 30em) {
+    .flyin-grid {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 5rem;
+    }
+
+    .flyin-grid__item {
+      flex: 1 1 300px;
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      max-width: 600px;
+    }
+
+    @supports (display: grid) {
+      .flyin-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 2em;
+      }
+
+      .flyin-grid__item {
+        max-width: initial;
+        margin: 0;
+      }
+    }
+  }
+
+  .card {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    background-color: white;
+    color: hsl(210, 15%, 20%);
+    box-shadow: 0.2em 0.5em 1em rgba(0, 0, 0, 0.3);
+  }
+  .card > img {
+    width: 100%;
+  }
+
+  @keyframes fly-in {
+    0% {
+      transform: translateZ(-800px) rotateY(90deg);
+      opacity: 0;
+    }
+    56% {
+      transform: translateZ(-160px) rotateY(87deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateZ(0) rotateY(0);
+    }
+  }
